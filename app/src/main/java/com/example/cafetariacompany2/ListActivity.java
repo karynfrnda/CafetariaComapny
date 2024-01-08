@@ -63,5 +63,7 @@ public class ListActivity extends AppCompatActivity{
                 Toast.makeText(ListActivity.this, "Terjadi kesalahan.", Toast.LENGTH_SHORT).show();
             }
         });
+        
+        //p user veronica
     }
 }
