@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#A64B2A">
+
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_coffee_24"/>
+    <TextView
+        android:id="@+id/cafeteria_c"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/CafeteriaCompany"
+        android:fontFamily="@font/robotothin"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="15dp"
+        android:text="LOGIN"
+        android:backgroundTint="@color/dark_red"
+        android:fontFamily="@font/intemedium"/>
+
+    <TextView
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="170dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/intemedium"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CafeteriaCompany2</string>
+    <string name="CafeteriaCompany">Cafetaria Company</string>
+    <string name="username">Username</string>
+    <string name="title">Welcome to Cafetaria Company </string>
+    <string name="pls_back_again">Press back again to exit</string>
+</resources>

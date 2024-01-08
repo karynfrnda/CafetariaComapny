@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="#A64B2A">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_coffee_24"/>
+    <TextView
+        android:id="@+id/cafeteria_c"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/CafeteriaCompany"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/robotothin"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="Nickname"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_person_pin_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_supervised_user_circle_24"
+        android:hint="Fullname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:textColorHint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/robotomedium"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:textSize="15dp"
+        android:text="register"
+        android:backgroundTint="@color/dark_red"
+        android:fontFamily="@font/intemedium"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
